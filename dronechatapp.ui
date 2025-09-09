@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DroneChatApp</class>
+ <widget class="QDialog" name="DroneChatApp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Server</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,1">
+   <item>
+    <widget class="QGroupBox" name="grpChats">
+     <property name="title">
+      <string>Chats</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+      <item>
+       <widget class="QTabWidget" name="tbChat"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblStatus">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="grpClients">
+     <property name="title">
+      <string>Clients</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="3,1">
+      <item>
+       <widget class="QListWidget" name="lstClients"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnDisconnectAll">
+        <property name="text">
+         <string>Disconnect All</string>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
